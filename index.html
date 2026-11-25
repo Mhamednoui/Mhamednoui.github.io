@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mhamed Nouira · Embedded Systems Engineer · Firmware, IoT Security, PCB</title>
+<meta name="description" content="Embedded systems engineer for product teams and remote freelance clients: ESP32/IoT firmware and prototypes, IoT firmware security reviews (EU Cyber Resilience Act readiness), KiCad PCB design and local generative AI. UTC+1 (CET), English, French, Arabic.">
+<meta name="author" content="Mhamed Nouira">
+<link rel="canonical" href="https://mhamednoui.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Mhamed Nouira · Embedded Systems Engineer">
+<meta property="og:description" content="Firmware, IoT security, PCB and AI, for product teams and freelance clients. Paying clients since 2024. Remote, UTC+1 (CET).">
+<meta property="og:url" content="https://mhamednoui.github.io/">
+<meta property="profile:first_name" content="Mhamed">
+<meta property="profile:last_name" content="Nouira">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mhamed Nouira · Embedded Systems Engineer">
+<meta name="twitter:description" content="Firmware, IoT security, PCB and AI, for product teams and freelance clients. Remote, UTC+1 (CET).">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1117'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%234cc2e8' stroke-width='2'/%3E%3Cpath d='M16 16 L24 9' stroke='%235fe3a1' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mhamednoui.github.io/#person",
+      "name": "Mhamed Nouira",
+      "url": "https://mhamednoui.github.io/",
+      "email": "mailto:nouira.mhamed@gmail.com",
+      "jobTitle": "Embedded Systems Engineer",
+      "description": "Embedded systems engineer: ESP32/IoT firmware, IoT and firmware security, PCB design and local generative AI. Freelance paying clients since 2024. Works remotely, UTC+1 (CET).",
+      "address": { "@type": "PostalAddress", "addressCountry": "TN" },
+      "knowsLanguage": ["en", "fr", "ar"],
+      "knowsAbout": ["Embedded systems", "ESP32 firmware", "Arduino", "STM32", "FreeRTOS", "IoT", "RFID access control", "Hardware security", "Firmware reverse engineering", "UART", "SPI flash extraction", "IoT security review", "EU Cyber Resilience Act", "PCB design", "KiCad", "LTspice", "Machine learning", "Intrusion detection", "XGBoost", "Generative AI", "ComfyUI", "Local LLMs", "Radar and navigation electronics", "C", "C++", "C#", "Python"],
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Tunisia Polytechnic School (EPT), University of Carthage" },
+        { "@type": "CollegeOrUniversity", "name": "Tunisian Naval Academy" }
+      ],
+      "award": ["Minister of Defence Award (2023), ranked 1st in the final year, Tunisian Naval Academy", "Master's thesis graded Very Good"],
+      "hasCredential": { "@type": "EducationalOccupationalCredential", "name": "Building Real-Time Video AI Applications", "recognizedBy": { "@type": "Organization", "name": "NVIDIA Deep Learning Institute" } },
+      "sameAs": ["https://www.linkedin.com/in/nouira-mhamed", "https://github.com/Mhamednoui"]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://mhamednoui.github.io/#s-firmware",
+      "name": "ESP32 / IoT firmware and prototype development",
+      "serviceType": "Embedded firmware development",
+      "description": "Firmware for ESP32 and Arduino-class devices and working prototypes: sensors, RFID, relays and locks, Wi-Fi/TCP/HTTP links, watchdogs and unattended operation. Also debugging and extending existing firmware.",
+      "provider": { "@id": "https://mhamednoui.github.io/#person" },
+      "areaServed": "Remote"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://mhamednoui.github.io/#s-security",
+      "name": "IoT / firmware security review and EU Cyber Resilience Act readiness",
+      "serviceType": "IoT device security assessment",
+      "description": "Hands-on review of a connected device: UART and debug access, flash extraction, firmware unpacking, secrets, update path and exposed services. Written report with prioritised fixes and a gap list against the CRA requirements.",
+      "provider": { "@id": "https://mhamednoui.github.io/#person" },
+      "areaServed": "Remote"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://mhamednoui.github.io/#s-pcb",
+      "name": "PCB design and hardware bring-up support",
+      "serviceType": "PCB design",
+      "description": "2-layer boards in KiCad with design-rule and electrical checks, SPICE checks for analogue stages, manufacturing files (Gerber, BOM, pick-and-place), and firmware support when the first boards arrive.",
+      "provider": { "@id": "https://mhamednoui.github.io/#person" },
+      "areaServed": "Remote"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://mhamednoui.github.io/#s-ai",
+      "name": "Generative-AI production and local AI setup",
+      "serviceType": "Generative AI",
+      "description": "Print-ready image production with locally hosted models, and private AI set up on your own hardware: image and video workflows and local LLMs.",
+      "provider": { "@id": "https://mhamednoui.github.io/#person" },
+      "areaServed": "Remote"
+    }
+  ]
+}
+</script>
+<script>
+  // Apply the saved theme before first paint to avoid a flash.
+  try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+  document.documentElement.classList.add('js');
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="#top" aria-label="Mhamed Nouira, back to top"><span class="brand-mark" aria-hidden="true">MN</span><span class="brand-name">Mhamed Nouira</span></a>
+    <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="icon-btn theme-btn" type="button" aria-label="Switch to light theme">
+      <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow mono"><span class="dot" aria-hidden="true"></span>Embedded Systems Engineer · Remote, UTC+1 (CET)</p>
+        <h1 id="hero-title">Mhamed Nouira</h1>
+        <p class="pitch">Firmware, IoT security, PCB and AI, for product teams and freelance clients.</p>
+        <p class="lead">I build devices that people use every day and take devices apart to find their weak points. Paying clients since 2024; Research Master's in IoT and Data Processing; engineering degree in naval systems (embedded systems).</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:nouira.mhamed@gmail.com?subject=Project%20brief&amp;body=Hi%20Mhamed%2C%0D%0A%0D%0AWhat%20we%20are%20building%3A%0D%0A%0D%0AWhat%20we%20need%20help%20with%3A%0D%0A%0D%0ATimeline%3A%0D%0A%0D%0ABudget%20range%3A%0D%0A%0D%0AThanks%2C%0D%0A">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Send me a brief <span class="sr">(opens your email app)</span></a>
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn" href="cv.pdf" download="Mhamed_Nouira_CV.pdf">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download CV <span class="sr">(PDF)</span></a>
+        </div>
+        <ul class="stats" aria-label="Highlights">
+          <li><strong>Since 2024</strong><span>paying freelance clients</span></li>
+          <li><strong>~2,000</strong><span>gym members on my access systems, in daily use</span></li>
+          <li><strong>1st</strong><span>in final year, Minister of Defence Award</span></li>
+        </ul>
+      </div>
+      <figure class="radar-wrap" aria-hidden="true">
+        <canvas id="radar" width="440" height="440"></canvas>
+        <figcaption class="radar-cap mono">PPI · RANGE 4 · TRACKING</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section alt" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <p class="kicker mono">01 / services</p>
+      <h2 id="services-title">Hire me for</h2>
+      <div class="services">
+        <article class="service" id="s-firmware">
+          <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span>
+          <h3>ESP32 / IoT firmware and prototypes</h3>
+          <p>Working firmware and prototypes for ESP32 and Arduino devices, built to run unattended.</p>
+          <details class="more-d"><summary>What you get</summary><p class="svc-long">Firmware for ESP32 and Arduino-class devices, from sensors, RFID, relays and locks to Wi-Fi, TCP and HTTP links, built to run unattended. I also debug and extend existing firmware.</p><dl>
+            <dt>Typical deliverable</dt><dd>A working prototype, commented source code, a wiring diagram and a hand-over guide.</dd>
+            <dt>Proof</dt><dd><a href="#p-gym">Gym access systems (paid, in daily use)</a> · <a href="#p-arcade">Arcade machine</a> · <a href="#p-mesh">ESP32 mesh network</a></dd>
+          </dl></details>
+        </article>
+        <article class="service" id="s-security">
+          <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>IoT / firmware security review and CRA readiness</h3>
+          <p>I open your device the way an attacker would and tell you what to fix, ahead of the EU Cyber Resilience Act.</p>
+          <details class="more-d"><summary>What you get</summary><p class="svc-long">I open your device the way an attacker would: UART and debug access, flash extraction and firmware unpacking, then a review of stored secrets, the update path and exposed services. Useful before the EU Cyber Resilience Act (CRA) obligations apply.</p><dl>
+            <dt>Typical deliverable</dt><dd>A written report with findings ranked by risk, recommended fixes and a gap list against the CRA requirements, to support your own conformity work.</dd>
+            <dt>Proof</dt><dd><a href="#p-router">ISP router reverse engineering (public write-up)</a> · <a href="#p-4g">4G router root</a> · <a href="#p-ids">Intrusion detection thesis</a></dd>
+          </dl></details>
+        </article>
+        <article class="service" id="s-pcb">
+          <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 9.5V14h6.5M16 14.5V8h-6.5"/><circle cx="8" cy="8" r="1.5"/><circle cx="16" cy="16" r="1.5"/></svg></span>
+          <h3>PCB design and hardware bring-up support</h3>
+          <p>KiCad boards checked by design rules and simulation, with support when the first boards arrive.</p>
+          <details class="more-d"><summary>What you get</summary><p class="svc-long">2-layer boards in KiCad, checked with design-rule and electrical checks and SPICE simulation for analogue stages, plus firmware and debugging support when the first boards arrive.</p><dl>
+            <dt>Typical deliverable</dt><dd>The KiCad project, Gerber, BOM and pick-and-place files, and a short check report.</dd>
+            <dt>Proof</dt><dd><a href="#p-pcb">PCB design and AI-assisted pipeline</a> · <a href="#p-arcade">Arcade controller board (in development)</a></dd>
+          </dl></details>
+        </article>
+        <article class="service" id="s-ai">
+          <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3l1.8 4.7 4.7 1.8-4.7 1.8L11 16l-1.8-4.7L4.5 9.5l4.7-1.8z"/><path d="M18.5 14l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span>
+          <h3>Generative-AI production and local AI setup</h3>
+          <p>Print-ready AI images, or a private AI setup running on your own hardware.</p>
+          <details class="more-d"><summary>What you get</summary><p class="svc-long">Print-ready images produced with locally hosted models, or a private AI setup on your own hardware: image and video workflows and local LLMs, with no data sent to outside services.</p><dl>
+            <dt>Typical deliverable</dt><dd>Finished, print-ready assets, or a documented workflow installed and tested on your machine.</dd>
+            <dt>Proof</dt><dd><a href="#p-genai">Generative-AI production (paid client work)</a></dd>
+          </dl></details>
+        </article>
+      </div>
+
+      <h3 class="sub-title" id="process-title">How we work</h3>
+      <ol class="steps" aria-labelledby="process-title">
+        <li><strong>Send a brief</strong><span>What you are building, your timeline and a budget range. I reply with questions.</span></li>
+        <li><strong>Fixed-scope proposal</strong><span>Scope, deliverables, milestones and a fixed price, agreed before any work starts.</span></li>
+        <li><strong>Delivery with documentation</strong><span>Source and design files, test notes and a hand-over guide your team can maintain.</span></li>
+      </ol>
+
+      <ul class="trust" aria-label="Facts">
+        <li>Paying clients since 2024</li>
+        <li>~2,000 gym members on systems I built, in daily use</li>
+        <li>Ranked 1st in the final year · Minister of Defence Award</li>
+        <li>Master's thesis graded <em>Very Good</em></li>
+        <li><a href="https://github.com/Mhamednoui/RTL8676S-TD8963N-reverse-engineering" target="_blank" rel="noopener">Public reverse-engineering write-up on GitHub<span class="sr"> (opens in a new tab)</span></a></li>
+        <li>UTC+1 (CET), remote, same working hours as EU teams</li>
+        <li>English (C1), French (B2), Arabic (native)</li>
+      </ul>
+      <p class="cta-row"><a class="btn btn-primary" href="mailto:nouira.mhamed@gmail.com?subject=Project%20brief&amp;body=Hi%20Mhamed%2C%0D%0A%0D%0AWhat%20we%20are%20building%3A%0D%0A%0D%0AWhat%20we%20need%20help%20with%3A%0D%0A%0D%0ATimeline%3A%0D%0A%0D%0ABudget%20range%3A%0D%0A%0D%0AThanks%2C%0D%0A">Send me a brief <span class="sr">(opens your email app)</span></a></p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <p class="kicker mono">02 / about</p>
+      <h2 id="about-title">Builds and breaks real hardware</h2>
+      <div class="about-grid">
+        <div class="pillars">
+          <article class="pillar reveal">
+            <span class="pillar-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><rect x="6" y="6" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Builder</h3>
+            <p>I build RFID door-access systems used every day at 2 paying gyms, an award-winning ESP32 mesh network, a drone and a coin-operated arcade machine.</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 17l6-6-6-6M12 19h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Breaker</h3>
+            <p>I opened two routers through UART and flash dumps, and built a four-domain ML intrusion detection system for autonomous vehicles.</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 12l5-5M12 3v2M12 19v2M3 12h2M19 12h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Operator</h3>
+            <p>As Officer of the Deck in the Tunisian Navy, I lead the bridge watch and keep the radar, ECDIS, AIS, GPS and radios working.</p>
+          </article>
+        </div>
+        <div class="terminal reveal" role="img" aria-label="Terminal-style summary: embedded systems engineer; 2 gym access systems online with about 2,000 members; 2 routers opened over UART; thesis IDS 96.6% recall; leads 4 to 10 sailors on watch; also PCB design, robotics and generative AI for clients.">
+          <div class="term-bar" aria-hidden="true"><span></span><span></span><span></span><em class="mono">uart0 · 115200 8N1</em></div>
+          <pre class="term mono" aria-hidden="true"><span class="l">[ 0.000] boot: mhamed-nouira</span>
+<span class="l">[ 0.004] role: embedded systems engineer <b>ok</b></span>
+<span class="l">[ 0.012] builder: 2 gym access systems online, ~2,000 members <b>ok</b></span>
+<span class="l">[ 0.019] breaker: 2 routers opened over UART + flash dump <b>ok</b></span>
+<span class="l">[ 0.027] ids: recall 96.6% on 5,400-cycle live sim <b>ok</b></span>
+<span class="l">[ 0.033] operator: bridge watch, 4-10 sailors <b>ok</b></span>
+<span class="l">[ 0.037] also: PCB design, robotics, generative AI for clients <b>ok</b></span>
+<span class="l">[ 0.041] learning: advanced PCB, STM32 + FreeRTOS</span>
+<span class="l">login: <i class="cursor"></i></span></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section alt" id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <p class="kicker mono">03 / projects</p>
+      <h2 id="projects-title">Projects</h2>
+      <p class="section-lead">Paid client work first, then the strongest technical work.</p>
+      <div class="filters" role="group" aria-label="Filter projects by tag">
+        <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter="paid" aria-pressed="false">Client work</button>
+        <button type="button" class="chip" data-filter="embedded" aria-pressed="false">Embedded</button>
+        <button type="button" class="chip" data-filter="security" aria-pressed="false">Security</button>
+        <button type="button" class="chip" data-filter="ml" aria-pressed="false">ML/AI</button>
+        <button type="button" class="chip" data-filter="naval" aria-pressed="false">Naval</button>
+      </div>
+      <p class="sr" id="filter-status" aria-live="polite"></p>
+
+      <div class="cards">
+        <article class="card" id="p-gym" data-tags="paid embedded">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="42" width="48" height="34" rx="5"/><path class="s2" d="M22 54h14M22 64h22"/><path class="s2" d="M64 50a10 10 0 0 1 0 18M70 45a17 17 0 0 1 0 28"/><path d="M80 60h16m-5-5 5 5-5 5"/><rect x="102" y="41" width="40" height="38" rx="4"/><path d="M110 41v-7M118 41v-7M126 41v-7M134 41v-7M110 79v7M118 79v7M126 79v7M134 79v7"/><text class="t" x="122" y="64">ESP32</text><path d="M148 60h16m-5-5 5 5-5 5"/><rect x="172" y="56" width="40" height="32" rx="5"/><path d="M180 56v-9a12 12 0 0 1 24 0v9"/><circle class="fl" cx="192" cy="70" r="3"/><path d="M192 73v6"/><circle class="s2" cx="220" cy="30" r="10"/><path class="s2" d="M215 30l4 4 7-8"/><text class="t" x="36" y="96">RFID</text><text class="t" x="192" y="104">LOCK</text></svg></div>
+          <p class="meta mono">Freelance · paid client work · 2024–present</p>
+          <h3>RFID Door-Access Systems for Gyms</h3>
+          <p class="metric"><strong>2</strong> paying clients, in daily use</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Designed, installed and maintain the door-access systems for 2 paying gyms, used every day by about 2,000 members.</li>
+            <li>ESP32 firmware for the RFID reader and door relay, a C++ TCP door server backed by MySQL, and a C# admin app (extended from an open-source app) with a live dashboard.</li>
+            <li>I installed all the hardware myself: magnetic locks, relays and readers. An Android app lets the owner open the door remotely.</li>
+            <li>Built for unattended operation: a Windows network service, auto-start and a Wi-Fi watchdog. A hardware simulator lets me test updates before installing them on site.</li>
+          </ul></details>
+          <p class="stack">C++ · ESP32 · C# .NET · Kotlin (Android) · MySQL · RFID · TCP/HTTP</p>
+          <ul class="tags"><li>Client work</li><li>Embedded</li></ul>
+        </article>
+
+        <article class="card" id="p-genai" data-tags="paid ml">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="20" width="70" height="80" rx="4"/><path class="s2" d="M28 88l18-22 12 14 9-9 15 17"/><circle class="s2" cx="70" cy="40" r="7"/><path class="s2" d="M106 28v12M100 34h12M118 50v8M114 54h8"/><path d="M106 76h22m-5-5 5 5-5 5"/><path d="M156 50V26h52v24"/><rect x="144" y="50" width="76" height="32" rx="5"/><path d="M156 74v24h52V74"/><path class="s2" d="M164 84h36M164 91h24"/><circle class="fl" cx="182" cy="62" r="3"/><circle class="fl" cx="192" cy="62" r="3"/><circle class="fl" cx="202" cy="62" r="3"/><circle class="fl" cx="212" cy="62" r="3"/></svg></div>
+          <p class="meta mono">Freelance · paid client work · 2026</p>
+          <h3>Generative-AI Production</h3>
+          <p class="metric"><strong>Paid</strong> client delivery, print-ready</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Built a production pipeline for a print-shop client: AI image generation with locally hosted models, upscaling, CMYK colour management and print-ready export.</li>
+            <li>I run local image and video generation workflows, and self-hosted LLMs with custom tooling, on a single consumer GPU.</li>
+            <li>I use AI coding agents daily to speed up software and hardware projects.</li>
+          </ul></details>
+          <p class="stack">ComfyUI · Python · colour management · Ollama · AI coding agents</p>
+          <ul class="tags"><li>Client work</li><li>ML/AI</li></ul>
+        </article>
+
+        <article class="card" id="p-router" data-tags="security embedded">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="66" y="38" width="60" height="48" rx="4"/><path d="M66 48H56M66 58H56M66 68H56M66 78H56M126 48h10M126 58h10M126 68h10M126 78h10"/><text class="t" x="96" y="66">FLASH</text><path class="s2" d="M84 38V18M96 38V18M108 38V18"/><text class="t" x="96" y="12">UART</text><circle cx="186" cy="58" r="22"/><path d="M202 74l18 18"/><text class="t" x="186" y="62">0x7F</text></svg></div>
+          <p class="meta mono">2026 · public write-up</p>
+          <h3>ISP Router Reverse Engineering (Realtek RTL8676S)</h3>
+          <p class="metric"><strong>2</strong> byte-identical flash dumps</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Got a shell over UART, then dumped the flash two ways: over TFTP, and by desoldering the SPI-NOR chip (chip-off). Both dumps were byte-identical.</li>
+            <li>Decompressed about 132 LZMA streams and showed that the "encrypted" config was only compressed. Wrote up the findings for responsible disclosure.</li>
+          </ul></details>
+          <p class="stack">UART · CH341A · SPI-NOR · binwalk · LZMA</p>
+          <p><a class="ext" href="https://github.com/Mhamednoui/RTL8676S-TD8963N-reverse-engineering" target="_blank" rel="noopener">Read the write-up on GitHub<span class="sr"> (opens in a new tab)</span></a></p>
+          <ul class="tags"><li>Security</li><li>Embedded</li></ul>
+        </article>
+
+        <article class="card" id="p-ids" data-tags="ml security">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="12" width="48" height="18" rx="4"/><text class="t" x="34" y="24">CAN</text><rect x="10" y="38" width="48" height="18" rx="4"/><text class="t" x="34" y="50">GPS</text><rect x="10" y="64" width="48" height="18" rx="4"/><text class="t" x="34" y="76">LiDAR</text><rect x="10" y="90" width="48" height="18" rx="4"/><text class="t" x="34" y="102">NET</text><path class="s2" d="M58 21C90 21 88 60 108 60M58 47c30 0 30 13 50 13M58 73c30 0 30-13 50-13M58 99C90 99 88 60 108 60"/><circle cx="128" cy="60" r="19"/><text class="t" x="128" y="64">ML</text><path d="M148 60h22m-5-5 5 5-5 5"/><path d="M200 28l22 8v18c0 16-10 26-22 32-12-6-22-16-22-32V36z"/><path class="s2" d="M192 56l6 6 11-12"/></svg></div>
+          <p class="meta mono">Master's thesis · 2025–2026</p>
+          <h3>Multi-Domain Intrusion Detection System for Autonomous Vehicles</h3>
+          <p class="metric"><strong>96.6%</strong> recall on a 5,400-cycle live simulation</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Four ML detectors (network, CAN bus, GPS, LiDAR), with a fusion engine that combines them into 5 threat levels and responds in tiers.</li>
+            <li>Live 5,400-cycle simulation on unfiltered traffic: 96.6% recall, 93.8% accuracy, 90.1% precision (caught 2,319 of 2,400 attack cycles).</li>
+            <li>XGBoost detectors trained on public datasets (CICIDS2017, CICIoV2024, AV-GPS-Dataset, KITTI with 3 synthetic LiDAR attacks), a temporal correlator, SHAP explanations, and CAN windowing that cuts model calls 50×. CAN detector: 0 errors on 281,644 held-out CICIoV2024 frames.</li>
+            <li>Thesis graded <em>Very Good</em> (Tunisia Polytechnic School); a paper from it is under review.</li>
+          </ul></details>
+          <p class="stack">Python · XGBoost · scikit-learn · SHAP · pandas</p>
+          <ul class="tags"><li>ML/AI</li><li>Security</li></ul>
+        </article>
+
+        <article class="card" id="p-4g" data-tags="security embedded">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="24" y="60" width="84" height="30" rx="6"/><path d="M40 60l-8-34M92 60l8-34"/><path class="s2" d="M104 30a12 12 0 0 1 8 12M108 22a22 22 0 0 1 12 20"/><circle class="fl" cx="44" cy="75" r="3"/><circle class="fl" cx="58" cy="75" r="3"/><circle class="fl" cx="72" cy="75" r="3"/><rect x="132" y="28" width="94" height="64" rx="6"/><path d="M132 42h94"/><text class="t s" x="142" y="62">$ su</text><text class="t s" x="142" y="80">uid=0(root)</text></svg></div>
+          <p class="meta mono">2026 · own device</p>
+          <h3>4G Router Root (ZTE ZX297520V3 platform)</h3>
+          <p class="metric"><strong>136</strong> web API commands mapped</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Mapped the web API (136 commands, including hidden engineering pages), located the UART pins with a multimeter, dumped the SPI-NAND flash and got a full root shell.</li>
+            <li>Captured the boot log over UART (SoC, RAM, 128 MiB SPI-NAND, partition map), then enabled telnet for full control of the device.</li>
+            <li>Ground rules on my own device: read before write, and never touch the IMEI or NV data.</li>
+          </ul></details>
+          <p class="stack">UART · CH341A · SPI-NAND · nmap · Wireshark · Kali</p>
+          <ul class="tags"><li>Security</li><li>Embedded</li></ul>
+        </article>
+
+        <article class="card" id="p-arcade" data-tags="embedded">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M36 106V22h76v84"/><path d="M44 30h60"/><path class="s2" d="M56 36v26M74 44v26M92 36v26"/><rect x="62" y="88" width="24" height="7" rx="2"/><circle cx="146" cy="72" r="14"/><circle class="s2" cx="146" cy="72" r="8"/><path class="s2" d="M184 58a24 24 0 0 1 34 0M191 67a13 13 0 0 1 20 0"/><circle class="fl" cx="201" cy="76" r="3"/></svg></div>
+          <p class="meta mono">Product build · 2025–2026</p>
+          <h3>Coin-Operated Reflex Arcade Machine</h3>
+          <p class="metric"><strong>In operation</strong>, now run by a partner</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Two-controller design: real-time game logic on an Arduino Mega, with an ESP32 serving a Wi-Fi admin dashboard for settings and diagnostics.</li>
+            <li>Coin acceptor with credit handling, 10 electromagnet drivers, several difficulty levels and a watchdog failsafe.</li>
+            <li>I operated the machine myself; a partner now runs it, and it is still in operation.</li>
+            <li>A dedicated 2-layer controller PCB is in development, designed in KiCad and checked with design-rule checks and circuit simulation.</li>
+          </ul></details>
+          <p class="stack">C++ · Arduino Mega · ESP32 · KiCad · LTspice · SolidWorks</p>
+          <ul class="tags"><li>Embedded</li></ul>
+        </article>
+
+        <article class="card" id="p-pcb" data-tags="embedded ml">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="18" width="150" height="84" rx="6"/><rect x="68" y="44" width="34" height="34" rx="2"/><path class="s2" d="M102 52h24l10-10h20M102 70h30l8 8h16M68 52H48l-8-8M68 70H42v16"/><circle cx="158" cy="42" r="3"/><circle cx="158" cy="78" r="3"/><circle cx="38" cy="42" r="3"/><circle cx="42" cy="88" r="3"/><rect x="184" y="42" width="44" height="36" rx="6"/><text class="t" x="206" y="57">DRC</text><path class="s2" d="M198 65l5 5 9-9"/></svg></div>
+          <p class="meta mono">Electronics design · 2026</p>
+          <h3>PCB Design &amp; Design Automation</h3>
+          <p class="metric"><strong>Schematic → fab files</strong>, AI-assisted</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Designed a 2-layer controller board in KiCad (not yet manufactured) that passes the electrical and design-rule checks, with its filter stages verified in SPICE simulation.</li>
+            <li>Directed AI coding agents to build an AI-assisted design pipeline: placement, autorouting, design-rule and layout checks, and manufacturing outputs (Gerber, BOM, pick-and-place).</li>
+            <li>The pipeline includes automated tests that deliberately break designs to prove the checks catch the faults.</li>
+          </ul></details>
+          <p class="stack">KiCad · Python · LTspice · Proteus · AI-assisted development</p>
+          <ul class="tags"><li>Embedded</li><li>ML/AI</li></ul>
+        </article>
+
+        <article class="card" id="p-mesh" data-tags="embedded naval">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path class="s2" d="M24 36l48 26M24 88l48-26M72 62l48-32M72 62l48 30M120 30l46 32M120 92l46-30M24 36v52M166 62h24"/><circle class="fl" cx="24" cy="36" r="7"/><circle class="fl" cx="24" cy="88" r="7"/><circle class="fl" cx="72" cy="62" r="7"/><circle class="fl" cx="120" cy="30" r="7"/><circle class="fl" cx="120" cy="92" r="7"/><circle class="fl" cx="166" cy="62" r="7"/><rect x="190" y="44" width="42" height="30" rx="3"/><path d="M204 86h14M211 74v12"/></svg></div>
+          <p class="meta mono">Engineering final project · 2023</p>
+          <h3>ESP32 Mesh Wireless Sensor &amp; Actuator Network</h3>
+          <p class="metric"><strong>Best</strong> final project among the three military academies</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Self-organising ESP32 mesh: each node relays to the next until the PC gateway, which collects all data and controls the actuator nodes. I built a C# GUI for it.</li>
+            <li>Extensive reliability testing; highest grade.</li>
+            <li>Won best final project in the competition between the three military academies.</li>
+          </ul></details>
+          <p class="stack">ESP32 · ESP-Mesh · C# · Tunisian Naval Academy</p>
+          <ul class="tags"><li>Embedded</li><li>Naval</li></ul>
+        </article>
+
+        <article class="card" id="p-bridge" data-tags="naval embedded">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="66" cy="60" r="44"/><circle class="s2" cx="66" cy="60" r="28"/><circle class="s2" cx="66" cy="60" r="12"/><path d="M66 60l31-31"/><circle class="fl" cx="92" cy="44" r="3"/><circle class="fl" cx="44" cy="80" r="3"/><path d="M136 80h90l-12 14h-66z"/><path d="M158 80V66h32v14M174 66V50M168 56h12"/><path class="s2" d="M136 104q8-6 16 0t16 0 16 0 16 0 16 0"/></svg></div>
+          <p class="meta mono">Tunisian Navy · 2023–present</p>
+          <h3>Bridge Electronics &amp; 3D Radar Installation</h3>
+          <p class="metric"><strong>GEM Elettronica</strong> 3D radar installation</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>I maintain and troubleshoot radar, ECDIS, AIS, GPS, cameras and VHF/HF/UHF radios, and repair failures on board.</li>
+            <li>Worked with GEM Elettronica (Italy) when they installed a 3D radar on board; trained and certified on its basic operation.</li>
+          </ul></details>
+          <p class="stack">Radar · ECDIS · AIS · GPS · VHF/HF/UHF</p>
+          <ul class="tags"><li>Naval</li><li>Embedded</li></ul>
+        </article>
+
+        <article class="card" id="p-offsec" data-tags="security">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="24" y="16" width="64" height="20"/><rect x="24" y="36" width="64" height="20"/><rect x="24" y="56" width="64" height="20"/><rect class="s2" x="24" y="76" width="64" height="20"/><text class="t" x="56" y="30">buf</text><text class="t" x="56" y="50">buf</text><text class="t" x="56" y="70">EBP</text><text class="t" x="56" y="90">RET</text><path class="s2" d="M94 86c14 0 14-26 26-26"/><rect x="124" y="28" width="102" height="64" rx="6"/><path d="M124 42h102"/><text class="t s" x="134" y="62">$ ./exploit</text><text class="t s" x="134" y="80"># whoami</text></svg></div>
+          <p class="meta mono">Ongoing training · 2026</p>
+          <h3>Offensive Security Training</h3>
+          <p class="metric"><strong>Stack · format string · heap</strong></p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Hands-on Linux binary exploitation, from stack overflows to bypassing exploit mitigations and heap exploitation.</li>
+            <li>Network penetration-testing labs on purpose-built vulnerable systems.</li>
+            <li>Feeds directly into my embedded and IoT security work on real devices.</li>
+          </ul></details>
+          <p class="stack">Linux · gdb · Kali · nmap · Wireshark</p>
+          <ul class="tags"><li>Security</li></ul>
+        </article>
+
+        <article class="card" id="p-drones" data-tags="embedded">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M64 34l52 52M116 34l-52 52"/><rect x="80" y="50" width="20" height="20" rx="4"/><circle class="s2" cx="64" cy="34" r="14"/><circle class="s2" cx="116" cy="34" r="14"/><circle class="s2" cx="64" cy="86" r="14"/><circle class="s2" cx="116" cy="86" r="14"/><rect x="150" y="56" width="72" height="26" rx="6"/><circle cx="164" cy="88" r="9"/><circle cx="208" cy="88" r="9"/><path class="s2" d="M212 56V36"/></svg></div>
+          <p class="meta mono">Robotics · 2024–2026</p>
+          <h3>Drones &amp; Robotic Vehicles</h3>
+          <p class="metric"><strong>ArduPilot</strong> quadcopter built and flown</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Quadcopter: sourced and assembled the components, then configured the ArduPilot flight firmware and radio control.</li>
+            <li>Four-motor skid-steer vehicle: the firmware decodes the RC receiver signals with interrupts and stops the motors automatically if the signal is lost.</li>
+          </ul></details>
+          <p class="stack">ArduPilot · Arduino · C++ · motor control · RC systems</p>
+          <ul class="tags"><li>Embedded</li></ul>
+        </article>
+
+        <article class="card" id="p-rpi" data-tags="ml embedded naval">
+          <div class="art" aria-hidden="true"><svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="44" width="50" height="34" rx="5"/><circle class="s2" cx="43" cy="61" r="10"/><path stroke-dasharray="3 6" d="M70 52l58-24M70 70l58 24"/><rect class="s2" stroke-dasharray="6 4" x="136" y="20" width="56" height="84" rx="2"/><circle cx="164" cy="38" r="9"/><path d="M164 48v26M164 56l-14 10M164 56l14 10M164 74l-10 20M164 74l10 20"/><text class="t" x="164" y="14">person</text></svg></div>
+          <p class="meta mono">Naval Academy project · 2022</p>
+          <h3>Real-Time Human Tracking on a Raspberry Pi</h3>
+          <p class="metric"><strong>Highest</strong> grade</p>
+          <details class="more-d"><summary>Details</summary><ul class="points">
+            <li>Solo project: real-time human detection and tracking on a Raspberry Pi with a camera and YOLOv3-Tiny.</li>
+            <li>Received the highest grade.</li>
+          </ul></details>
+          <p class="stack">Python · YOLOv3-Tiny · Raspberry Pi</p>
+          <ul class="tags"><li>ML/AI</li><li>Embedded</li><li>Naval</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="section" id="journey" aria-labelledby="journey-title">
+    <div class="wrap">
+      <p class="kicker mono">04 / experience &amp; education</p>
+      <h2 id="journey-title">Experience &amp; education</h2>
+      <ol class="timeline">
+        <li class="reveal">
+          <p class="meta mono">2024–present · Experience</p>
+          <h3>Freelance Embedded Systems Engineer</h3>
+          <p class="org">Self-employed · paying clients in Tunisia</p>
+          <ul>
+            <li>Deliver and maintain RFID door-access systems for 2 gyms (ESP32 firmware, door server, admin app), used every day by about 2,000 members.</li>
+            <li>Produce print-ready artwork for a print-shop client with a local generative-AI pipeline.</li>
+          </ul>
+        </li>
+        <li class="reveal">
+          <p class="meta mono">2023–present · Experience</p>
+          <h3>Naval Officer (Officer of the Deck, Bridge Electronics)</h3>
+          <p class="org">Tunisian Navy</p>
+          <ul>
+            <li>Lead the bridge watch on patrol vessels and an offshore patrol vessel, with 4–10 sailors under my direct responsibility.</li>
+            <li>Maintain and troubleshoot radar, ECDIS, AIS, GPS and VHF/HF/UHF radios. Worked with GEM Elettronica (Italy) when they installed a 3D radar on board.</li>
+          </ul>
+        </li>
+        <li class="reveal">
+          <p class="meta mono">2024–2026 · Education</p>
+          <h3>Research Master's, Advanced Engineering: IoT and Data Processing</h3>
+          <p class="org">Tunisia Polytechnic School (EPT), University of Carthage</p>
+          <p>Thesis on a multi-domain intrusion detection system for autonomous vehicles, graded <em>Very Good</em>.</p>
+        </li>
+        <li class="reveal">
+          <p class="meta mono">2020–2023 · Education</p>
+          <h3>Engineering Diploma: Bridge and Naval Systems (Embedded Systems)</h3>
+          <p class="org">Tunisian Naval Academy</p>
+          <p class="award">Ranked 1st in the final year · Minister of Defence Award</p>
+        </li>
+      </ol>
+      <div class="cert reveal">
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><circle cx="12" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 14l-1.5 8 5-3 5 3-1.5-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <div>
+          <p class="meta mono">Certificate · 2025</p>
+          <p><strong>Building Real-Time Video AI Applications</strong>, NVIDIA Deep Learning Institute</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section alt" id="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <p class="kicker mono">05 / skills</p>
+      <h2 id="skills-title">Skills</h2>
+      <dl class="skill-grid">
+        <div class="skill reveal"><dt>Languages</dt><dd>Python, C, C++, C#, Kotlin (Android)</dd></div>
+        <div class="skill reveal"><dt>Embedded / IoT</dt><dd>ESP32, Arduino, STM32 (bare-metal), FreeRTOS, Raspberry Pi, NVIDIA Jetson, RFID, ESP-Mesh, interrupts, watchdogs</dd></div>
+        <div class="skill reveal"><dt>Electronics &amp; PCB</dt><dd>KiCad, LTspice, Proteus, SolidWorks (basic), soldering, logic analyser</dd></div>
+        <div class="skill reveal"><dt>Hardware security</dt><dd>UART, bootloader access, SPI flash dumping, chip-off, firmware analysis, responsible disclosure, binary exploitation, network pentesting, Ghidra, Wireshark, nmap</dd></div>
+        <div class="skill reveal"><dt>ML</dt><dd>XGBoost, scikit-learn, SHAP, CAN-bus intrusion detection (datasets), TensorFlow (basic), YOLO</dd></div>
+        <div class="skill reveal"><dt>Generative AI</dt><dd>Local image and video generation (ComfyUI: Flux, Wan 2.2), print-ready AI production for clients, locally hosted LLMs (Ollama), AI-assisted software development with coding agents (Claude Code)</dd></div>
+        <div class="skill reveal"><dt>Naval electronics</dt><dd>Radar, ECDIS, AIS, GPS, VHF/HF/UHF radios</dd></div>
+        <div class="skill reveal"><dt>Tools</dt><dd>Linux, Git, Docker, LaTeX</dd></div>
+        <div class="skill reveal"><dt>Spoken languages</dt><dd>Arabic (native), English (C1), French (B2)</dd></div>
+      </dl>
+
+      <div class="learning reveal" aria-labelledby="learning-title">
+        <h3 id="learning-title" class="mono"><span class="dot" aria-hidden="true"></span>Currently learning</h3>
+        <ul>
+          <li>Advanced PCB design</li>
+          <li>Analogue electronics</li>
+          <li>STM32 with FreeRTOS</li>
+          <li>TensorFlow deep learning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact">
+      <p class="kicker mono">06 / contact</p>
+      <h2 id="contact-title">Let's talk</h2>
+      <p class="lead">For a project, send a short description of your device or problem, your timeline and a budget range; I'll reply with questions and a plan. For roles, email or LinkedIn works best. I work remotely, UTC+1 (CET).</p>
+      <p class="cta-row"><a class="btn btn-primary" href="mailto:nouira.mhamed@gmail.com?subject=Project%20brief&amp;body=Hi%20Mhamed%2C%0D%0A%0D%0AWhat%20we%20are%20building%3A%0D%0A%0D%0AWhat%20we%20need%20help%20with%3A%0D%0A%0D%0ATimeline%3A%0D%0A%0D%0ABudget%20range%3A%0D%0A%0D%0AThanks%2C%0D%0A">Send me a brief <span class="sr">(opens your email app)</span></a></p>
+      <ul class="contact-list">
+        <li><a class="contact-item" href="mailto:nouira.mhamed@gmail.com">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <span><small>Email</small>nouira.mhamed@gmail.com</span></a></li>
+        <li><a class="contact-item" href="https://www.linkedin.com/in/nouira-mhamed" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V17M8 7.5v.01M12 17v-6.5M12 13.5c0-2 1.2-3 2.6-3S17 11.5 17 13.5V17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span><small>LinkedIn</small>in/nouira-mhamed<span class="sr"> (opens in a new tab)</span></span></a></li>
+        <li><a class="contact-item" href="https://github.com/Mhamednoui" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.7 11.7 0 0 0-6.2 0C6.6 2.3 5.6 2.6 5.6 2.6a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><small>GitHub</small>Mhamednoui<span class="sr"> (opens in a new tab)</span></span></a></li>
+        <li><a class="contact-item" href="cv.pdf" download="Mhamed_Nouira_CV.pdf">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><small>Résumé</small>Download CV (PDF)</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap"><p>© 2026 Mhamed Nouira · Embedded Systems Engineer · Tunisia, UTC+1 · <a href="simple.html">Text-only version</a></p></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mhamed Nouira · Embedded Systems Engineer (text-only)</title>
+<meta name="description" content="Text-only version. Embedded systems engineer for product teams and remote freelance clients: ESP32/IoT firmware, IoT firmware security reviews (EU Cyber Resilience Act readiness), KiCad PCB design and local generative AI. UTC+1 (CET).">
+<meta name="author" content="Mhamed Nouira">
+<link rel="canonical" href="https://mhamednoui.github.io/simple.html">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root { --bg:#fafbfc; --fg:#1b2228; --muted:#4f5a64; --accent:#0a6688; --line:#d9dee3; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1418; --fg:#e6e9ec; --muted:#a3adb6; --accent:#5cc0e6; --line:#2a3540; } }
+  body { margin:0; font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--fg); }
+  main { max-width:780px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:2rem; margin:0; }
+  h2 { font-size:1.15rem; color:var(--accent); margin:40px 0 12px; border-bottom:1px solid var(--line); padding-bottom:6px; }
+  h3 { font-size:1.02rem; margin:22px 0 2px; }
+  a { color:var(--accent); }
+  .muted { color:var(--muted); }
+  ul, ol { padding-left:22px; }
+  li { margin-bottom:4px; }
+  dt { font-weight:600; margin-top:8px; }
+  dd { margin:0; color:var(--muted); }
+  footer { margin-top:48px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); padding-top:12px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Mhamed Nouira</h1>
+    <p><strong>Embedded systems engineer: firmware, IoT security, PCB and AI, for product teams and freelance clients.</strong></p>
+    <p class="muted">Remote, UTC+1 (CET) · English (C1), French (B2), Arabic (native) · Paying clients since 2024 · Research Master's in IoT and Data Processing · Engineering degree in naval systems (embedded systems).</p>
+    <p><a href="mailto:nouira.mhamed@gmail.com?subject=Project%20brief&amp;body=Hi%20Mhamed%2C%0D%0A%0D%0AWhat%20we%20are%20building%3A%0D%0A%0D%0AWhat%20we%20need%20help%20with%3A%0D%0A%0D%0ATimeline%3A%0D%0A%0D%0ABudget%20range%3A%0D%0A%0D%0AThanks%2C%0D%0A">Send me a brief</a> · <a href="cv.pdf">CV (PDF)</a> · <a href="index.html">Full version of this site</a></p>
+  </header>
+
+  <h2>Services</h2>
+  <h3>1. ESP32 / IoT firmware and prototypes</h3>
+  <p>Firmware for ESP32 and Arduino-class devices, from sensors, RFID, relays and locks to Wi-Fi, TCP and HTTP links, built to run unattended. I also debug and extend existing firmware.<br>
+  <span class="muted">Typical deliverable: a working prototype, commented source code, a wiring diagram and a hand-over guide. Proof: gym access systems (paid, in daily use), arcade machine, ESP32 mesh network.</span></p>
+  <h3>2. IoT / firmware security review and CRA readiness</h3>
+  <p>A hands-on review of your device: UART and debug access, flash extraction and firmware unpacking, then stored secrets, the update path and exposed services. Useful before the EU Cyber Resilience Act (CRA) obligations apply.<br>
+  <span class="muted">Typical deliverable: a written report with findings ranked by risk, recommended fixes and a gap list against the CRA requirements, to support your own conformity work. Proof: ISP router reverse engineering (public write-up), 4G router root, intrusion detection thesis.</span></p>
+  <h3>3. PCB design and hardware bring-up support</h3>
+  <p>2-layer boards in KiCad, checked with design-rule and electrical checks and SPICE simulation for analogue stages, plus firmware and debugging support when the first boards arrive.<br>
+  <span class="muted">Typical deliverable: the KiCad project, Gerber, BOM and pick-and-place files, and a short check report. Proof: PCB design and AI-assisted pipeline; arcade controller board (in development).</span></p>
+  <h3>4. Generative-AI production and local AI setup</h3>
+  <p>Print-ready images produced with locally hosted models, or a private AI setup on your own hardware: image and video workflows and local LLMs, with no data sent to outside services.<br>
+  <span class="muted">Typical deliverable: finished, print-ready assets, or a documented workflow installed and tested on your machine. Proof: generative-AI production (paid client work).</span></p>
+
+  <h3>How we work</h3>
+  <ol>
+    <li><strong>Send a brief:</strong> what you are building, your timeline and a budget range. I reply with questions.</li>
+    <li><strong>Fixed-scope proposal:</strong> scope, deliverables, milestones and a fixed price, agreed before any work starts.</li>
+    <li><strong>Delivery with documentation:</strong> source and design files, test notes and a hand-over guide your team can maintain.</li>
+  </ol>
+
+  <h3>Facts</h3>
+  <ul>
+    <li>Paying clients since 2024; about 2,000 gym members use systems I built, every day.</li>
+    <li>Ranked 1st in the final year at the Tunisian Naval Academy; Minister of Defence Award (2023).</li>
+    <li>Master's thesis graded <em>Very Good</em>.</li>
+    <li>Public reverse-engineering write-up: <a href="https://github.com/Mhamednoui/RTL8676S-TD8963N-reverse-engineering">github.com/Mhamednoui/RTL8676S-TD8963N-reverse-engineering</a></li>
+  </ul>
+
+  <h2>Projects</h2>
+
+  <h3>RFID Door-Access Systems for Gyms</h3>
+  <p class="muted">Freelance · paid client work · 2024–present</p>
+  <ul>
+    <li>Designed, installed and maintain the door-access systems for 2 paying gyms, used every day by about 2,000 members.</li>
+    <li>ESP32 firmware for the RFID reader and door relay, a C++ TCP door server backed by MySQL, and a C# admin app (extended from an open-source app) with a live dashboard.</li>
+    <li>I installed all the hardware myself: magnetic locks, relays and readers. An Android app lets the owner open the door remotely.</li>
+    <li>Built for unattended operation: a Windows network service, auto-start and a Wi-Fi watchdog. A hardware simulator lets me test updates before installing them on site.</li>
+    <li class="muted">C++ · ESP32 · C# .NET · Kotlin (Android) · MySQL · RFID · TCP/HTTP</li>
+  </ul>
+
+  <h3>Generative-AI Production</h3>
+  <p class="muted">Freelance · paid client work · 2026</p>
+  <ul>
+    <li>Built a production pipeline for a print-shop client: AI image generation with locally hosted models, upscaling, CMYK colour management and print-ready export.</li>
+    <li>I run local image and video generation workflows, and self-hosted LLMs with custom tooling, on a single consumer GPU.</li>
+    <li>I use AI coding agents daily to speed up software and hardware projects.</li>
+    <li class="muted">ComfyUI · Python · colour management · Ollama · AI coding agents</li>
+  </ul>
+
+  <h3>ISP Router Reverse Engineering (Realtek RTL8676S)</h3>
+  <p class="muted">2026 · public write-up</p>
+  <ul>
+    <li>Got a shell over UART, then dumped the flash two ways: over TFTP, and by desoldering the SPI-NOR chip (chip-off). Both dumps were byte-identical.</li>
+    <li>Decompressed about 132 LZMA streams and showed that the "encrypted" config was only compressed. Wrote up the findings for responsible disclosure.</li>
+    <li class="muted">UART · CH341A · SPI-NOR · binwalk · LZMA · <a href="https://github.com/Mhamednoui/RTL8676S-TD8963N-reverse-engineering">write-up on GitHub</a></li>
+  </ul>
+
+  <h3>Multi-Domain Intrusion Detection System for Autonomous Vehicles</h3>
+  <p class="muted">Master's thesis · 2025–2026</p>
+  <ul>
+    <li>Four ML detectors (network, CAN bus, GPS, LiDAR), with a fusion engine that combines them into 5 threat levels and responds in tiers.</li>
+    <li>Live 5,400-cycle simulation on unfiltered traffic: 96.6% recall, 93.8% accuracy, 90.1% precision (caught 2,319 of 2,400 attack cycles).</li>
+    <li>XGBoost detectors trained on public datasets (CICIDS2017, CICIoV2024, AV-GPS-Dataset, KITTI with 3 synthetic LiDAR attacks), a temporal correlator, SHAP explanations, and CAN windowing that cuts model calls 50×. CAN detector: 0 errors on 281,644 held-out CICIoV2024 frames.</li>
+    <li>Thesis graded <em>Very Good</em> (Tunisia Polytechnic School); a paper from it is under review.</li>
+    <li class="muted">Python · XGBoost · scikit-learn · SHAP · pandas</li>
+  </ul>
+
+  <h3>4G Router Root (ZTE ZX297520V3 platform)</h3>
+  <p class="muted">2026 · own device</p>
+  <ul>
+    <li>Mapped the web API (136 commands, including hidden engineering pages), located the UART pins with a multimeter, dumped the SPI-NAND flash and got a full root shell.</li>
+    <li>Captured the boot log over UART (SoC, RAM, 128 MiB SPI-NAND, partition map), then enabled telnet for full control of the device.</li>
+    <li>Ground rules on my own device: read before write, and never touch the IMEI or NV data.</li>
+    <li class="muted">UART · CH341A · SPI-NAND · nmap · Wireshark · Kali</li>
+  </ul>
+
+  <h3>Coin-Operated Reflex Arcade Machine</h3>
+  <p class="muted">Product build · 2025–2026</p>
+  <ul>
+    <li>Two-controller design: real-time game logic on an Arduino Mega, with an ESP32 serving a Wi-Fi admin dashboard for settings and diagnostics.</li>
+    <li>Coin acceptor with credit handling, 10 electromagnet drivers, several difficulty levels and a watchdog failsafe.</li>
+    <li>I operated the machine myself; a partner now runs it, and it is still in operation.</li>
+    <li>A dedicated 2-layer controller PCB is in development, designed in KiCad and checked with design-rule checks and circuit simulation.</li>
+    <li class="muted">C++ · Arduino Mega · ESP32 · KiCad · LTspice · SolidWorks</li>
+  </ul>
+
+  <h3>PCB Design &amp; Design Automation</h3>
+  <p class="muted">Electronics design · 2026</p>
+  <ul>
+    <li>Designed a 2-layer controller board in KiCad (not yet manufactured) that passes the electrical and design-rule checks, with its filter stages verified in SPICE simulation.</li>
+    <li>Directed AI coding agents to build an AI-assisted design pipeline: placement, autorouting, design-rule and layout checks, and manufacturing outputs (Gerber, BOM, pick-and-place).</li>
+    <li>The pipeline includes automated tests that deliberately break designs to prove the checks catch the faults.</li>
+    <li class="muted">KiCad · Python · LTspice · Proteus · AI-assisted development</li>
+  </ul>
+
+  <h3>ESP32 Mesh Wireless Sensor &amp; Actuator Network</h3>
+  <p class="muted">Engineering final project · 2023</p>
+  <ul>
+    <li>Self-organising ESP32 mesh: each node relays to the next until the PC gateway, which collects all data and controls the actuator nodes. I built a C# GUI for it.</li>
+    <li>Extensive reliability testing; highest grade. Won best final project in the competition between the three military academies.</li>
+  </ul>
+
+  <h3>Bridge Electronics &amp; 3D Radar Installation</h3>
+  <p class="muted">Tunisian Navy · 2023–present</p>
+  <ul>
+    <li>I maintain and troubleshoot radar, ECDIS, AIS, GPS, cameras and VHF/HF/UHF radios, and repair failures on board.</li>
+    <li>Worked with GEM Elettronica (Italy) when they installed a 3D radar on board; trained and certified on its basic operation.</li>
+  </ul>
+
+  <h3>Offensive Security Training</h3>
+  <p class="muted">Ongoing training · 2026</p>
+  <ul>
+    <li>Hands-on Linux binary exploitation, from stack overflows to bypassing exploit mitigations and heap exploitation, plus network penetration-testing labs on purpose-built vulnerable systems.</li>
+  </ul>
+
+  <h3>Drones &amp; Robotic Vehicles</h3>
+  <p class="muted">Robotics · 2024–2026</p>
+  <ul>
+    <li>Quadcopter: sourced and assembled the components, then configured the ArduPilot flight firmware and radio control.</li>
+    <li>Four-motor skid-steer vehicle: the firmware decodes the RC receiver signals with interrupts and stops the motors automatically if the signal is lost.</li>
+  </ul>
+
+  <h3>Real-Time Human Tracking on a Raspberry Pi</h3>
+  <p class="muted">Naval Academy project · 2022</p>
+  <ul>
+    <li>Solo project: real-time human detection and tracking on a Raspberry Pi with a camera and YOLOv3-Tiny. Received the highest grade.</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <h3>Freelance Embedded Systems Engineer</h3>
+  <p class="muted">Self-employed · paying clients in Tunisia · 2024–present</p>
+  <ul>
+    <li>Deliver and maintain RFID door-access systems for 2 gyms (ESP32 firmware, door server, admin app), used every day by about 2,000 members.</li>
+    <li>Produce print-ready artwork for a print-shop client with a local generative-AI pipeline.</li>
+  </ul>
+  <h3>Naval Officer (Officer of the Deck, Bridge Electronics)</h3>
+  <p class="muted">Tunisian Navy · 2023–present</p>
+  <ul>
+    <li>Lead the bridge watch on patrol vessels and an offshore patrol vessel, with 4–10 sailors under my direct responsibility.</li>
+    <li>Maintain and troubleshoot radar, ECDIS, AIS, GPS and VHF/HF/UHF radios. Worked with GEM Elettronica (Italy) when they installed a 3D radar on board.</li>
+  </ul>
+
+  <h2>Education</h2>
+  <h3>Research Master's, Advanced Engineering: IoT and Data Processing</h3>
+  <p class="muted">Tunisia Polytechnic School (EPT), University of Carthage · 2024–2026 · thesis graded <em>Very Good</em></p>
+  <h3>Engineering Diploma: Bridge and Naval Systems (Embedded Systems)</h3>
+  <p class="muted">Tunisian Naval Academy · 2020–2023 · ranked 1st in the final year · Minister of Defence Award</p>
+  <h3>Certificate</h3>
+  <p class="muted">Building Real-Time Video AI Applications, NVIDIA Deep Learning Institute (2025)</p>
+
+  <h2>Skills</h2>
+  <dl>
+    <dt>Languages</dt><dd>Python, C, C++, C#, Kotlin (Android)</dd>
+    <dt>Embedded / IoT</dt><dd>ESP32, Arduino, STM32 (bare-metal), FreeRTOS, Raspberry Pi, NVIDIA Jetson, RFID, ESP-Mesh, interrupts, watchdogs</dd>
+    <dt>Electronics &amp; PCB</dt><dd>KiCad, LTspice, Proteus, SolidWorks (basic), soldering, logic analyser</dd>
+    <dt>Hardware security</dt><dd>UART, bootloader access, SPI flash dumping, chip-off, firmware analysis, responsible disclosure, binary exploitation, network pentesting, Ghidra, Wireshark, nmap</dd>
+    <dt>ML</dt><dd>XGBoost, scikit-learn, SHAP, CAN-bus intrusion detection (datasets), TensorFlow (basic), YOLO</dd>
+    <dt>Generative AI</dt><dd>Local image and video generation (ComfyUI: Flux, Wan 2.2), print-ready AI production for clients, locally hosted LLMs (Ollama), AI-assisted software development with coding agents (Claude Code)</dd>
+    <dt>Naval electronics</dt><dd>Radar, ECDIS, AIS, GPS, VHF/HF/UHF radios</dd>
+    <dt>Tools</dt><dd>Linux, Git, Docker, LaTeX</dd>
+    <dt>Spoken languages</dt><dd>Arabic (native), English (C1), French (B2)</dd>
+    <dt>Currently learning</dt><dd>Advanced PCB design, analogue electronics, STM32 with FreeRTOS, TensorFlow deep learning</dd>
+  </dl>
+
+  <h2>Contact</h2>
+  <ul>
+    <li>Email: <a href="mailto:nouira.mhamed@gmail.com">nouira.mhamed@gmail.com</a> (for a project, <a href="mailto:nouira.mhamed@gmail.com?subject=Project%20brief&amp;body=Hi%20Mhamed%2C%0D%0A%0D%0AWhat%20we%20are%20building%3A%0D%0A%0D%0AWhat%20we%20need%20help%20with%3A%0D%0A%0D%0ATimeline%3A%0D%0A%0D%0ABudget%20range%3A%0D%0A%0D%0AThanks%2C%0D%0A">send a brief</a>)</li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/nouira-mhamed">linkedin.com/in/nouira-mhamed</a></li>
+    <li>GitHub: <a href="https://github.com/Mhamednoui">github.com/Mhamednoui</a></li>
+    <li>CV: <a href="cv.pdf">cv.pdf</a></li>
+  </ul>
+
+  <footer>© 2026 Mhamed Nouira · Embedded Systems Engineer · Tunisia, UTC+1 · <a href="index.html">Full version</a></footer>
+</main>
+</body>
+</html>
